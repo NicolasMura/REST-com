@@ -7,3 +7,4 @@ django-oauth-toolkit
 pygments
 pillow
 django-extra-fields
+psycopg2
