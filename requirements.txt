@@ -1,0 +1,9 @@
+Django==1.8.13
+djangorestframework==3.3.2
+django-cors-headers==1.1.0
+django-oauth-plus
+oauth2
+django-oauth-toolkit
+pygments
+pillow
+drf-extra-fields
