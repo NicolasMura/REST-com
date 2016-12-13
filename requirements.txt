@@ -6,4 +6,4 @@ oauth2
 django-oauth-toolkit
 pygments
 pillow
-drf-extra-fields
+django-extra-fields

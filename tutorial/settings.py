@@ -155,5 +155,15 @@ if HOST != 'vps121400.ovh.net':
         }
     }
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+    # Allow CORS requests from all domains
+    # (just for the scope of this tutorial):
+    CORS_ORIGIN_ALLOW_ALL = False
+    # CORS whitelist
+    CORS_ORIGIN_WHITELIST = (
+        'localhost:8000',
+        'localhost:8001',
+    )
+
 else:
     from .production import *
