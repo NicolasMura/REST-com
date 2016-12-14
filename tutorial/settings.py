@@ -14,13 +14,11 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import socket
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__)) + '/'
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
-
-# SECURITY WARNING: don't run with debug turned on in production!
 
 
 # Application definition
@@ -32,10 +30,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'snippets',
     'rest_framework',
     'corsheaders',
     'oauth2_provider',
-    'snippets',
 )
 
 OAUTH2_PROVIDER = {
