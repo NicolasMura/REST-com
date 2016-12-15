@@ -152,9 +152,18 @@ if HOST != 'vps121400.ovh.net':
     # (just for the scope of this tutorial):
     CORS_ORIGIN_ALLOW_ALL = False
     # CORS whitelist
+    # CORS_ORIGIN_WHITELIST = (
+    #     'localhost:8000',
+    #     'localhost:8001',
+    # )
+
+    # TESTS
     CORS_ORIGIN_WHITELIST = (
         'localhost:8000',
-        'localhost:8001',
+        # 'localhost:8001',
+        '192.168.1.18:8000',
+        # '90.2.9.4',  # Livebox
+        # '77.154.202.42',  # LG G3 en 4G
     )
 
 else:
